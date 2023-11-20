@@ -37,11 +37,3 @@ app.use(function(err,req,res,next){
 app.listen(app.get('port'),function(){
 	console.log('Express started on http://localhost:' + app.get('port') + '; press Ctrl-C to terminate.');
 });
-
-//create fibbonacci sequence using recursion
-function fib(n) {
-    if (n < 2)
-        return n;
-    else
-        return fib(n-1) + fib(n-2);
-}
